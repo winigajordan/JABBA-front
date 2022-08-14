@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  </head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light w-100 fixed-top">
+        <div class="container-fluid d-flex flex-row justify-content-evenly h-100">
+            <img class="logo1 h-50 " src="../../public/assets/logo.png">
+            <form action="" class="d-flex align-items-center h-100 " role="search" style="width:40%">
+                
+                    
+                    <select name="filtre" id="filtre" class="filtre h-100 border-0" style="background-color: transparent;">
+                        
+                        <option value="Femmes">Femmes</option>
+                        <option value="Hommes">Hommes</option>
+                        <option value="Enfants">Enfants</option>
+                        <option value="Celebrites">Célébrités</option>
+                    </select>
+                    <input type="text" name="" id="" placeholder="Rechercher des articles" class="input-search border-0 h-50 w-75" style="background:buttonface">
+                    <button type="submit" class="bouton-global-recherche border-0 h-50 col-2">
+                        <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
+                            <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </button>
+                
+            </form>
+            <a href="" class="fw-bolder">Boutique</a>
+            <a href="" class="fw-bolder">Forum</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Connexion</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Inscription</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Vendre</a>
+            <a href="" class="fw-bolder">  
+                <img src="../../public/assets/panier.png" width="20" height="20" alt="" srcset="">
+                <span>Panier</span>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="card">
+        <div class="mini-menu d-flex justify-content-end align-items-center " style="width: 43%; height:100px;">
+                <a class="navbar-brand me-5" href="#">Femmes</a>
+                <a class="navbar-brand me-5" href="#">Hommes</a>
+                <a class="navbar-brand me-5" href="#">Enfants</a>
+                <a class="navbar-brand me-5" href="#">Célébrités</a>
+            </div>
+            
+        <div class="cards d-flex flex-column justify-content-between" style="padding-left: 5%;padding-right: 5%; ">
+            <hr> 
+            <div class="d-flex justify-content-between pb-4" style="padding-left: 35%;padding-right: 0.47%; height: 100px;">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>Marque</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>            
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>Marque</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>prix</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>Etat</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>Taille</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="width:15%">
+                    <option>Couleur</option>
+                    <option value="Femmes">Femmes</option>
+                    <option value="Hommes">Hommes</option>
+                    <option value="Enfants">Enfants</option>
+                    <option value="Celebrites">Célébrités</option>
+                </select>    
+            </div>
+            <div class="contenair d-flex">
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenair d-flex mt-5">
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contenair d-flex mt-5">
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- mettre au dernier contenair mb-5 -->
+            <div class="contenair d-flex mt-5 mb-5">
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card border-0" style="width: 25%;">
+                    <div class="image-fluid d-flex mb-3">
+                        <img src="../../public/assets/Rectangle48.png" class="rounded-circle" height="50px" width="50px">
+                        <p class="text-center ms-3 mt-2">nom utilisateur</p>
+                    </div>
+                    <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                    <label>
+                        <input type="checkbox">
+                        <span>
+                            <ion-icon name="heart" class="Favoris"></ion-icon>
+                        </span>
+                    </label>
+                    <div class="card-body">
+                        <p class="text-center">Nom de la marque</p>
+                        <p class="text-center">Prix</p>
+                        <p class="text-center">Taille</p>
+                        <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" style="height:50px;background-color:#3A36DB;margin-left:25%">
+                            <span>Ajouter</span>
+                            <img src="../../public/assets/Vector.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div class="card-footer text-muted bg-dark border-0 d-flex justify-content-evenly " style="height:400px" >
+        <div class="card-text d-flex flex-column">
+            <span>Contact</span> 
+            <span>Sénégal,Dakar</span> 
+            <span>Numéro du l'admin</span> 
+            <span>mail de l'admin</span> 
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Paiement</span> 
+            <span>text</span> 
+            <div class="logos">
+    
+            </div>    
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Politique</span> 
+            <span>Termes et conditions générales</span> 
+            <span>Politique de retour</span> 
+            <span>Politique de confidentialité</span>  
+            <span>Cookies</span>  
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Réseaux</span> 
+            <span>logo Instagram</span> 
+            <span>logo Facebook</span> 
+            <span>logo twitter</span> 
+        </div>
+    </div>
+   
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   </body>
+</html>

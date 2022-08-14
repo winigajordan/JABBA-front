@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  </head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light w-100 fixed-top">
+        <div class="container-fluid d-flex flex-row justify-content-evenly h-100">
+            <img class="logo1 h-50 " src="../../public/assets/logo.png">
+            <form action="" class="d-flex align-items-center h-100 " role="search" style="width:40%">
+                
+                    
+                    <select name="filtre" id="filtre" class="filtre h-100 border-0" style="background-color: transparent;">
+                        
+                        <option value="Femmes">Femmes</option>
+                        <option value="Hommes">Hommes</option>
+                        <option value="Enfants">Enfants</option>
+                        <option value="Celebrites">Célébrités</option>
+                    </select>
+                    <input type="text" name="" id="" placeholder="Rechercher des articles" class="input-search border-0 h-50 w-75" style="background:buttonface">
+                    <button type="submit" class="bouton-global-recherche border-0 h-50 col-2">
+                        <svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20">
+                            <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </button>
+                
+            </form>
+            <a href="" class="fw-bolder">Boutique</a>
+            <a href="" class="fw-bolder">Forum</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Connexion</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Inscription</a>
+            <a href="" class="btn btn-primary text-light rounded-pill">Vendre</a>
+            <a href="" class="fw-bolder">  
+                <img src="../../public/assets/panier.png" width="20" height="20" alt="" srcset="">
+                <span>Panier</span>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="card">
+        <div class="mini-menu d-flex justify-content-end align-items-center " style="width: 43%; height:100px;">
+                <a class="navbar-brand me-5" href="#">Femmes</a>
+                <a class="navbar-brand me-5" href="#">Hommes</a>
+                <a class="navbar-brand me-5" href="#">Enfants</a>
+                <a class="navbar-brand me-5" href="#">Célébrités</a>
+            </div>
+    <div class="image-middle d-flex">
+            <div class="card-left d-flex flex-column justify-content-evenly">
+                <div class="contenair-text text-dark d-flex flex-column text-start">
+                    <h1 class="text-start">Prêts à faire</h1>
+                    <h1 class="text-start">du tri dans vos</h1>
+                    <h1 class="text-start">placard ?</h1>
+                </div>
+                <div class="contenair-text d-flex flex-column">
+                    <span style="opacity:0.4">Crée ta boutique et vends les habits</span>
+                    <span style="opacity:0.4">que tu ne portes plus</span>
+                </div>
+                <a class="btn btn-primary rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button">
+                    <span>Vendre ses habits</span>
+                    <img src="../../public/assets/Vector.png" alt="">
+                </a>
+            </div>
+            <div class="card-right h-100" style="width:57%">
+                <img src="../../public/assets/habits.png" alt=""  width="100%" height="100%">
+            </div>
+        </div>
+        <div class="card-text d-flex flex-column justify-content-evenly">
+            <h2 class="mb-5 fw-bold">Suggestions de recherche</h2>
+            <div class="marques d-flex justify-content-between h-50">
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+                <a class="btn btn-white d-flex flex-column justify-content-center h-100" href="#" role="button">
+                    <span>Zara</span>
+                    <span>102  articles</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card-text d-flex flex-column" style="height: 900px">
+            <h2 class="mb-5 fw-bold">Articles populaires</h2>
+            <div id="carousel-articles-populaires" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow-sm">
+                    <!-- Caroussel 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caroussel 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-articles-populaires" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-articles-populaires" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <a href="" class="btn text-center">Voir plus</a>
+        </div>
+        <div class="card-text d-flex flex-column" style="height: 900px">
+            <h2 class="mb-5 fw-bold">Nouveautés</h2>
+            <div id="carousel-nouveautes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow-sm">
+                    <!-- Caroussel 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caroussel 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-nouveautes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-nouveautes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <a href="" class="btn text-center">Voir plus</a>
+        </div>
+    
+        <div class="card-text d-flex flex-column" style="height: 900px">
+            <h2 class="mb-5 fw-bold">Vitrine</h2>
+            <div id="carousel-vitrine" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner shadow-sm">
+                    <!-- Caroussel 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caroussel 2 -->
+                    <div class="carousel-item ">
+                        <div class="cards-wrapper d-flex justify-content-between">
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card border-0" style="width: 25%;">
+                                <div class="info-user">
+                                    <img src="../../public/assets/Rectangle48.png" alt="" class="cercle" height="50" width="50" style="border: 1px solid transparent;border-radius:100%;">
+                                    <span>Nom de l'utilisateur</span>
+                                </div>
+                                <img src="../../public/assets/Rectangle48.png" class="card-img-top" alt="...">
+                                <label class=favoris-d>
+                                    <input type="checkbox">
+                                    <span>
+                                        <ion-icon name="heart" class="Favoris"></ion-icon>
+                                    </span>
+                                </label>
+                                <div class="card-body">
+                                    <p class="text-center" style="font-size:0.8em;letter-spacing: .2rem;">ZARA</p>
+                                    <p class="text-center">Prix</p>
+                                    <p class="text-center">Taille</p>
+                                    <a class="btn btn-primary w-50 rounded-pill d-flex align-items-center justify-content-evenly border-0" href="#" role="button" >
+                                        <span>Ajouter</span>
+                                        <img src="../../public/assets/Vector.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-vitrine" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-vitrine" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <a href="" class="btn text-center">Voir plus</a>
+        </div>
+        <div class="bouton" style="height:200px;width:92%">
+            <a class="btn btn-primary d-flex justify-content-evenly align-items-center rounded-pill border-0 justify-content-center float-end" href="#" role="button" >
+                <span>Voir la boutique</span>
+                <img src="../../public/assets/Vector.png" alt="">
+            </a>
+        </div>
+    
+    <div class="card-footer text-muted bg-dark border-0 d-flex justify-content-evenly " style="height:400px" >
+        <div class="card-text d-flex flex-column">
+            <span>Contact</span> 
+            <span>Sénégal,Dakar</span> 
+            <span>Numéro du l'admin</span> 
+            <span>mail de l'admin</span> 
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Paiement</span> 
+            <span>text</span> 
+            <div class="logos">
+    
+            </div>    
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Politique</span> 
+            <span>Termes et conditions générales</span> 
+            <span>Politique de retour</span> 
+            <span>Politique de confidentialité</span>  
+            <span>Cookies</span>  
+        </div>
+        <div class="card-text d-flex flex-column">
+            <span>Réseaux</span> 
+            <span>logo Instagram</span> 
+            <span>logo Facebook</span> 
+            <span>logo twitter</span> 
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   </body>
+</html>
