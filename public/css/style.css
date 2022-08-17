@@ -254,13 +254,13 @@ p{
 
 
 /* page Confirmation commande*/
-.card .contenair form .card-left .card-adresse .row .col, .card .contenair form .card-left .card-adresse #email,.card .contenair form .card-left .card-code-promo .code{
+.card .contenair section .card-left .card-adresse .row .col, .card .contenair section .card-left .card-adresse #email,.card .contenair section .card-left .card-code-promo .code{
     display: flex;
     flex-direction: column;
     height: 120px;
     justify-content: space-evenly;
 }
-.card .contenair form .card-left .card-adresse .row .col input, .card .contenair form .card-left .card-adresse #email input, .card .contenair form .card-left .card-code-promo .code input{
+.card .contenair section .card-left .card-adresse .row .col input, .card .contenair section .card-left .card-adresse #email input, .card .contenair section .card-left .card-code-promo .code input{
     width: 100%;
     height:50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
