@@ -50,65 +50,43 @@
             </a>
         </div>
     </nav>
-    
-    <div class="card ">
-        
-        
-        <div class="card-group" style="margin-top: 170px;">
-                <div class="card-left w-50">
-                    <img src="../../public/assets/Rectangle48.png" class="card-img-top"  >
-                    
-                </div>
-                <div class="card-right w-50" style="padding:3%">
-                    <form method="post" action="login.html.php">
-                                <div class="mb-5" style="margin-top: 15%;">
-                                    <h3>CRÉEZ VOTRE BOUTIQUE</h3> <br>
-                                    
-                                </div>
-                                
-                                
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label"> <strong> Nom de votre boutique</strong></label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                </div>
-                                
-    
-                            <div class="">
-                                <button class="btn1 btn-primary" type="submit" name="btn_save" value="connexion">Suivant</button>                              
-                            </div>
-                                
-                    </form>
-                </div>
+
+    <div class="card-group" >
+        <div class="card-left w-50">
+            <img src="../../public/assets/Rectangle48.png" class="card-img-top"  >
+            
         </div>
-    
-            <div class="card-footer text-muted bg-dark border-0 d-flex justify-content-evenly " style="height:400px" >
-        <div class="card-text d-flex flex-column">
-            <span>Contact</span> 
-            <span>Sénégal,Dakar</span> 
-            <span>Numéro du l'admin</span> 
-            <span>mail de l'admin</span> 
+        <div class="card-right w-50" style="padding:3%; margin-top: 10%;">
+            <form method="post" action="login.html.php">
+                        <div class="mb-5">
+                            <h3>CONNECTEZ-VOUS</h3>   
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">NOM D'UTILISATEUR/EMAIL</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">MOT DE PASSE</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 " >
+                          <a href="#" class="float-end mb-2">Mot de passe oublié ?</a>
+                        </div>
+
+                    <div class="">
+                        <button class="btn1 btn-primary" type="submit" name="btn_save" value="connexion">Connexion</button>                              
+                                    <hr>
+                                <p>Pas encore membre ?</p>
+                            
+                        <button class="btn1 btn-light border border-1" type="submit">S'enregistrer maintenant !</button>
+                    </div>
+                        
+            </form>
         </div>
-        <div class="card-text d-flex flex-column">
-            <span>Paiement</span> 
-            <span>text</span> 
-            <div class="logos">
-    
-            </div>    
-        </div>
-        <div class="card-text d-flex flex-column">
-            <span>Politique</span> 
-            <span>Termes et conditions générales</span> 
-            <span>Politique de retour</span> 
-            <span>Politique de confidentialité</span>  
-            <span>Cookies</span>  
-        </div>
-        <div class="card-text d-flex flex-column">
-            <span>Réseaux</span> 
-            <span>logo Instagram</span> 
-            <span>logo Facebook</span> 
-            <span>logo twitter</span> 
-        </div>
+
     </div>
+   
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
